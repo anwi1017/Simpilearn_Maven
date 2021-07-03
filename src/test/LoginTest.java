@@ -1,9 +1,12 @@
 package test;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+
+@Listeners(TestNgListenerEx.class)
 
 public class LoginTest extends Baseclass {
 	

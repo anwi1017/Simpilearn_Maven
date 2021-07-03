@@ -13,7 +13,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import pages.LoginPage;
@@ -26,7 +25,7 @@ public class Baseclass {
 	
 	XSSFWorkbook wbook;
 	XSSFSheet sheet;
-	SoftAssert soft = new SoftAssert();	
+	//SoftAssert soft = new SoftAssert();	
 	
 	@BeforeMethod
 	public void setup() throws IOException {
@@ -57,7 +56,7 @@ public class Baseclass {
 		
 		driver.close();
 		
-		soft.assertAll();
+		//soft.assertAll();
 	}
 }
 
