@@ -8,7 +8,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/anwi1017/Simplilearn_Maven.git'
+                git 'https://github.com/nicks204/Simplilearn_Maven.git'
                 // Run Maven on a Unix agent.
                 sh "mvn test"
                 // To run Maven on a Windows agent, use
